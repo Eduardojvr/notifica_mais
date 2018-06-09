@@ -22,7 +22,6 @@ def sendmail(request, texto, subject, emails):
 def data_mensage(request):
     email_to = ['noreplayfiscae@gmail.com']
     subject = 'Quadro de horários'
-    # text = 'Seu quadro de horário\n'
     
     if request.method == "GET":
         return HttpResponse("Use post for this action")
@@ -36,12 +35,8 @@ def data_mensage(request):
         sexta = d["sexta"]
         sabado = d["sabado"]
         domingo = d["domingo"]
-
-        emailSend = "Segunda: "+segunda+"\n"+"Terça: "+terca+"\n"+"Quarta: "+quarta+"\n"+"Quinta: "+quinta+"\n"+"Sexta: "+sexta+"\n"+"Sábado: "+sabado+"\n"+"Domingo: "+domingo
-        # print("==================================")
-        # print(emailSend)
-        # print("==================================")
-        # sendmail(request, text, subject, email_to)
+        emailSend = "Seu quadro horários\n"+"Segunda: "+segunda+"\n"+"Terça: "+terca+"\n"+"Quarta: "+quarta+"\n"+"Quinta: "+quinta+"\n"+"Sexta: "+sexta+"\n"+"Sábado: "+sabado+"\n"+"Domingo: "+domingo
         sendmail(request, emailSend, subject, email)        
-        return HttpResponse("Use post for this action")
+        # return HttpResponse("Use post for this action")
+        return render(request, 'home.html')
 
