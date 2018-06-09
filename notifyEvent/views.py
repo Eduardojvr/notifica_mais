@@ -38,5 +38,5 @@ def data_mensage(request):
         emailSend = "Seu quadro horários\n"+"Segunda: "+segunda+"\n"+"Terça: "+terca+"\n"+"Quarta: "+quarta+"\n"+"Quinta: "+quinta+"\n"+"Sexta: "+sexta+"\n"+"Sábado: "+sabado+"\n"+"Domingo: "+domingo
         sendmail(request, emailSend, subject, email)        
         # return HttpResponse("Use post for this action")
-        return render(request, 'home.html')
+    return render(request, 'home.html')
 
