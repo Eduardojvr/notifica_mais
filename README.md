@@ -1,4 +1,7 @@
-## ℹ️ Notifica mais
+<p align="center"><a href="image" target="_blank"><img width="500"src="https://i.imgur.com/Psoo5PH.png"></a></p>
+<p align="center">
+
+## ℹ️ Sobre
 O notifica mais é um micro serviço desenvolvido para oferecer suporte ao envio de email contendo os quadros de horários médicos da aplicação [Gerencia mais](https://github.com/fga-gpp-mds/2018.1_Gerencia_mais).
 
 ## ℹ️ Uso
@@ -17,4 +20,4 @@ Exemplo:
     "domingo":"12:00 ~ 13:00"
 }
 ```
-URL: https://notificamais.herokuapp.com/notifyEvent/data_mensage
+ℹ️ URL: https://notificamais.herokuapp.com/notifyEvent/data_mensage
