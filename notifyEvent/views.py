@@ -2,7 +2,6 @@ from django.shortcuts import render
 import urllib, json
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
-import requests
 from email.mime.text import MIMEText
 import smtplib
 
@@ -37,6 +36,5 @@ def data_mensage(request):
         domingo = d["domingo"]
         emailSend = "Seu quadro de horários\n"+"Segunda: "+segunda+"\n"+"Terça: "+terca+"\n"+"Quarta: "+quarta+"\n"+"Quinta: "+quinta+"\n"+"Sexta: "+sexta+"\n"+"Sábado: "+sabado+"\n"+"Domingo: "+domingo
         sendmail(request, emailSend, subject, email)        
-        # return HttpResponse("Use post for this action")
     return render(request, 'home.html')
 
