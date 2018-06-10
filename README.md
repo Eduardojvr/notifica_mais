@@ -5,7 +5,7 @@
 O notifica mais é um micro serviço desenvolvido para oferecer suporte ao envio de email contendo os quadros de horários médicos da aplicação [Gerencia mais](https://github.com/fga-gpp-mds/2018.1_Gerencia_mais).
 
 ## ℹ️ Uso
-Para utilizar o serviço, basta enviar os dados em formato [json](https://github.com/fga-gpp-mds/2018.1_Gerencia_mais) para a url apresentada abaixo via POST obedecendo a seguinte estrutura:
+Para utilizar o serviço, basta enviar os dados em formato [json](https://www.json.org/json-pt.html) para a url apresentada abaixo via POST obedecendo a seguinte estrutura:
 
 Exemplo:
 ```Terminal
