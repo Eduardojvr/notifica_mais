@@ -1,6 +1,8 @@
 <p align="center"><a href="image" target="_blank"><img width="500"src="https://i.imgur.com/Psoo5PH.png"></a></p>
 <p align="center">
-
+    
+[![Build Status](https://travis-ci.org/Eduardojvr/notifica_mais.svg?branch=master)](https://travis-ci.org/Eduardojvr/notifica_mais)
+    
 ## ℹ️ Sobre
 O notifica mais é um micro serviço desenvolvido para oferecer suporte ao envio de email contendo os quadros de horários médicos da aplicação [Gerencia mais](https://github.com/fga-gpp-mds/2018.1_Gerencia_mais).
 
@@ -81,4 +83,5 @@ Para rodar a aplicação, entre na pasta do projeto em que está localizado o __
   docker-compose up -d
 ```
 Espere até que todos os serviços estejam disponíveis, acesse a página inicial do projeto com o seguinte endereço: https://localhost:8000/notifyEvent/data_mensage
+
 Para utilizar o serviço siga o passo "Uso" substituindo a url aprensentada pelo endereço apresentado neste tópico.
